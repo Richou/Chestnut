@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Chestnut</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_test">Testance</string>
+    <string name="title_activity_location">LocationActivity</string>
+    <string name="refresh">Rafraîchir</string>
+    <string name="arrow_description">Fleche</string>
+    <string name="search_location">Search Location</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="eventDecorationDescription">Address Type</string>
+    <string name="title_activity_test">Testance</string>
+</resources>

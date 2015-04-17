@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<net.heanoria.droid.chestnut.components.ClearableAutocompleteTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/locationTextView"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:lines="1"
+    android:imeOptions="actionSearch"
+    android:hint="@string/search_location"
+    android:drawableRight="@drawable/ximage"/>
