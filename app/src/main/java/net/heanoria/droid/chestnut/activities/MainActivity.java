@@ -3,12 +3,9 @@ package net.heanoria.droid.chestnut.activities;
 import android.app.Activity;
 import android.app.FragmentManager;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.ArrayAdapter;
 
 import net.heanoria.droid.chestnut.R;
 import net.heanoria.droid.chestnut.adapters.LocationHistoryAdapter;
@@ -18,9 +15,7 @@ import net.heanoria.droid.chestnut.fragments.SearchLocationFragment;
 import net.heanoria.droid.chestnut.fragments.SearchLocationHistoryFragment;
 import net.heanoria.droid.chestnut.listeners.OnLocationSelectedListener;
 
-import java.util.Collections;
 import java.util.Date;
-import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
 
