@@ -26,7 +26,7 @@ public class LocationHistoryAdapter extends ArrayAdapter<LocationHistory> {
 
         if(view == null) {
             LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            view = inflater.inflate(R.layout.location_history_row, null);
+            view = inflater.inflate(R.layout.location_history_row, parent, false);
         }
 
         LocationHistory locationHistory = locationHistories.get(position);

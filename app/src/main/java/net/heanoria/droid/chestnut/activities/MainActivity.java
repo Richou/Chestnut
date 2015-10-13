@@ -21,8 +21,6 @@ import java.util.List;
 
 public class MainActivity extends Activity implements OnLocationSelectedListener{
 
-    private final String TAG = MainActivity.class.getName();
-
     private List<LocationHistory> locationHistory = null;
 
     @Override
@@ -33,7 +31,7 @@ public class MainActivity extends Activity implements OnLocationSelectedListener
         SearchLocationHistoryFragment searchLocationHistoryFragment = (SearchLocationHistoryFragment) fragmentManager.findFragmentById(R.id.searchLocationHistoryFragment);
         SearchLocationFragment searchLocationFragment = (SearchLocationFragment) fragmentManager.findFragmentById(R.id.searchLocationFragment);
 
-        locationHistory = new LinkedList<LocationHistory>();
+        locationHistory = new LinkedList<>();
 
         LocationHistoryAdapter adapter = new LocationHistoryAdapter(this, R.layout.location_history_row, locationHistory);
         PlaceAutoCompleteAdapter autoCompleteAdapter = new PlaceAutoCompleteAdapter(this, R.layout.address_item);
