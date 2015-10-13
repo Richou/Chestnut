@@ -133,6 +133,9 @@ public class Triangle {
         return shader;
     }
 
+    public void setColor(float[] color) {
+        this.color = color;
+    }
 
     private void initializeCircleMatrix() {
 

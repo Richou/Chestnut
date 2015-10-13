@@ -6,6 +6,8 @@ import android.opengl.Matrix;
 import android.os.SystemClock;
 import android.util.Log;
 
+import java.util.Arrays;
+
 import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.opengles.GL10;
 
@@ -31,6 +33,8 @@ public class MyGLRenderer implements GLSurfaceView.Renderer{
 
         mTriangle = new Triangle();
         triangle2 = new Triangle();
+        float[] color2 = {1f, 1f, 1f, 1f};
+        triangle2.setColor(color2);
     }
 
     @Override

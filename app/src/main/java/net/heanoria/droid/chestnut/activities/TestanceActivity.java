@@ -8,7 +8,10 @@ import android.opengl.GLSurfaceView;
 import android.os.Bundle;
 
 import net.heanoria.droid.chestnut.opengl.renderers.RadarComponentRenderer;
+import net.heanoria.droid.chestnut.renderers.CircleRenderer;
 import net.heanoria.droid.chestnut.renderers.MyGLRenderer;
+import net.heanoria.droid.chestnut.renderers.TestanceActivityRenderer;
+import net.heanoria.droid.chestnut.renderers.TestanceThreeActivityRenderer;
 
 public class TestanceActivity extends Activity{
 
@@ -31,7 +34,7 @@ public class TestanceActivity extends Activity{
             glSurfaceView.setEGLContextClientVersion(2);
 
             // Set the renderer to our demo renderer, defined below.
-            glSurfaceView.setRenderer(new RadarComponentRenderer());
+            glSurfaceView.setRenderer(new MyGLRenderer());
         }
         else
         {
