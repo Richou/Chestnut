@@ -34,7 +34,7 @@ public class TestanceActivity extends Activity{
             glSurfaceView.setEGLContextClientVersion(2);
 
             // Set the renderer to our demo renderer, defined below.
-            glSurfaceView.setRenderer(new MyGLRenderer());
+            glSurfaceView.setRenderer(new RadarComponentRenderer());
         }
         else
         {

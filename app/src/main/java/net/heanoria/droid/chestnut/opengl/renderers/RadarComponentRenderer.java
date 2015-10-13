@@ -16,11 +16,13 @@ public class RadarComponentRenderer implements GLSurfaceView.Renderer{
     private static String TAG = RadarComponentRenderer.class.getName();
 
     private Circle radarEffectCircle = null;
+    private Circle fixedCircle = null;
 
     private final float[] mMVPMatrix = new float[16];
     private final float[] mProjectionMatrix = new float[16];
     private final float[] mViewMatrix = new float[16];
     private final float[] mRadarEffectMatrix = new float[16];
+    private final float[] mFixedCircleMatrix = new float[16];
 
 
     @Override
@@ -29,6 +31,8 @@ public class RadarComponentRenderer implements GLSurfaceView.Renderer{
 
         radarEffectCircle = new Circle();
         radarEffectCircle.setColor(new float[]{0.0f, 1.0f, 0.14117647f, 1.0f});
+        fixedCircle = new Circle();
+        fixedCircle.setColor(new float[]{1f, 1f, 1f, 1f});
     }
 
     @Override
@@ -54,6 +58,12 @@ public class RadarComponentRenderer implements GLSurfaceView.Renderer{
         Matrix.setIdentityM(mRadarEffectMatrix, 0);
 
         Matrix.translateM(mRadarEffectMatrix, 0, 0, -0.3f, 0);
+
+        Matrix.setIdentityM(mFixedCircleMatrix, 0);
+
+        Matrix.translateM(mFixedCircleMatrix, 0, 0, -0.3f, 0);
+
+        fixedCircle.draw(mMVPMatrix);
 
         long time = SystemClock.uptimeMillis() % 2000L;
         float scale = (2.5f / 2000.0f) * ((int) time);

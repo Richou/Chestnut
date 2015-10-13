@@ -37,7 +37,7 @@ public class PlaceAutoCompleteAdapter extends ArrayAdapter<Address> implements F
 
     public PlaceAutoCompleteAdapter(Context context, int resource) {
         super(context, resource);
-        resultList = new ArrayList<Address>();
+        resultList = new ArrayList<>();
         addressesSearchService = new AddressesSearchServiceImpl();
     }
 

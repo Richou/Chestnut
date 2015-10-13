@@ -1,6 +1,6 @@
 package net.heanoria.droid.chestnut.opengl.shapes;
 
-public class Circle extends AbstractShape{
+public class Circle extends AbstractShape {
 
     private static int NUMBER_OF_VERTEX = 360;
 
