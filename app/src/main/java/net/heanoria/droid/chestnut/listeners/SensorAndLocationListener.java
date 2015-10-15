@@ -29,8 +29,8 @@ public class SensorAndLocationListener implements LocationListener, SensorEventL
     private Long oldTimestamp = null;
     private Double oldBearing = null;
 
-    private final int ROTATION_OFFSET = 500;
-    private final int ROTATION_TOLERANCE = 3;
+    private static final int ROTATION_OFFSET = 500;
+    private static final int ROTATION_TOLERANCE = 3;
 
     public SensorAndLocationListener() {
 

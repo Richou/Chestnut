@@ -1,6 +1,6 @@
 package net.heanoria.droid.chestnut.listeners;
 
 public interface OnTargetDirectionChangedListener {
-    public void onTargetDirectionChanged(Double targetBearing);
-    public void onTargetDistanceChanged(Double distance);
+    void onTargetDirectionChanged(Double targetBearing);
+    void onTargetDistanceChanged(Double distance);
 }
